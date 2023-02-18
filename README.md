@@ -1,21 +1,24 @@
 # Information Security Manual 2022 Notes
-This is a write up of all my notes I've taken from reading Information Security Manual document. It was a pleasure to read as I'm an aspiring cyber security professional at time the of creating this. I've taken all the tips and tricks I learnt from my readings and applied it to my everyday life and I cannot wait to learn more from here on. I would highly recommend anyone has an interest in security to read the 185 paged document, as it blew my mind a couple of times. I hope anyone who reads my write up takes something away from it, as a community, knowledge is power and I've done my job of sharing my wisdom. 
+The purpose of the Information Security Manual is to outline a cyber security framework that organisations can apply, using their risk management framework, to protect their systems and data from cyber threats. This is a write up of all my notes I've taken from reading Information Security Manual document. I hope anyone who reads my write up takes something away from it, as a community, knowledge is power and I've done my job of sharing my wisdom. 
 
-sources: https://www.cyber.gov.au/acsc/view-all-content/ismx         https://www.cyber.gov.au/acsc/view-all-content/essential-eight
+sources: [Information Security Manual](https://www.cyber.gov.au/acsc/view-all-content/ismx)         [Essential Eight](https://www.cyber.gov.au/acsc/view-all-content/essential-eight)
 
 <br>
 
+# Table of Contents
+
 - [Information Security Manual 2022 Notes](#information-security-manual-2022-notes)
+- [Table of Contents](#table-of-contents)
 - [Becoming a CISO](#becoming-a-ciso)
-  - [**Required Skills and Experience**](#required-skills-and-experience)
-  - [**Providing Cyber Security Leadership and Guidance**](#providing-cyber-security-leadership-and-guidance)
-  - [**Overseeing The Cyber Security Program**](#overseeing-the-cyber-security-program)
-  - [**Coordinating Cyber Security**](#coordinating-cyber-security)
-  - [**Communication**](#communication)
-  - [**Business Continuity and Disaster Recovery Planning**](#business-continuity-and-disaster-recovery-planning)
-  - [**Working with Suppliers**](#working-with-suppliers)
-  - [**Budgeting**](#budgeting)
-  - [**Overseeing Cyber Security personnel**](#overseeing-cyber-security-personnel)
+  - [Required Skills and Experience](#required-skills-and-experience)
+  - [Providing Cyber Security Leadership and Guidance](#providing-cyber-security-leadership-and-guidance)
+  - [Overseeing The Cyber Security Program](#overseeing-the-cyber-security-program)
+  - [Coordinating Cyber Security](#coordinating-cyber-security)
+  - [Communication](#communication)
+  - [Business Continuity and Disaster Recovery Planning](#business-continuity-and-disaster-recovery-planning)
+  - [Working with Suppliers](#working-with-suppliers)
+  - [Budgeting](#budgeting)
+  - [Overseeing Cyber Security Personnel](#overseeing-cyber-security-personnel)
   - [Risk Assesment](#risk-assesment)
   - [Protecting Systems and Their Resources](#protecting-systems-and-their-resources)
   - [Cyber Security Events](#cyber-security-events)
@@ -24,7 +27,7 @@ sources: https://www.cyber.gov.au/acsc/view-all-content/ismx         https://www
   - [Dectecting Cyber Security Incidents](#dectecting-cyber-security-incidents)
   - [Incident Management Policy](#incident-management-policy)
   - [Cyber Security Incident Register](#cyber-security-incident-register)
-    - [Security incident registry is maintained by covering the following:](#security-incident-registry-is-maintained-by-covering-the-following)
+  - [Security incident registry is maintained by covering the following:](#security-incident-registry-is-maintained-by-covering-the-following)
   - [Trusted Insider Program](#trusted-insider-program)
   - [Handling and Containing Data Spills](#handling-and-containing-data-spills)
   - [Handling and Containing Malicious Code Infections](#handling-and-containing-malicious-code-infections)
@@ -35,8 +38,6 @@ sources: https://www.cyber.gov.au/acsc/view-all-content/ismx         https://www
   - [Contractual Security Requirements](#contractual-security-requirements)
   - [Cyber Security Strategy](#cyber-security-strategy)
   - [Maintenance of Security Documentation](#maintenance-of-security-documentation)
-    - [*Security documentation is reviewed at least annually and includes a ‘current as at \[date\]’ or equivalent statement.*](#security-documentation-is-reviewed-at-least-annually-and-includes-a-current-as-at-date-or-equivalent-statement)
-- [](#)
   - [Communication of Security Documentation](#communication-of-security-documentation)
   - [Reporting Cryptographic-Related Cyber Security Incidents](#reporting-cryptographic-related-cyber-security-incidents)
   - [Monitoring Plan](#monitoring-plan)
@@ -54,7 +55,6 @@ sources: https://www.cyber.gov.au/acsc/view-all-content/ismx         https://www
   - [System Access Requirements](#system-access-requirements)
   - [Privileged Access to Systems](#privileged-access-to-systems)
   - [Recording Authorisation for Personnel to Access Systems](#recording-authorisation-for-personnel-to-access-systems)
-    - [**a secure record is maintained for the life of each system covering:**](#a-secure-record-is-maintained-for-the-life-of-each-system-covering)
   - [Temporary Access to Systems](#temporary-access-to-systems)
   - [Emergency Access to Systems](#emergency-access-to-systems)
 - [Cabling Infrastructure](#cabling-infrastructure)
@@ -90,11 +90,9 @@ sources: https://www.cyber.gov.au/acsc/view-all-content/ismx         https://www
   - [Using Mobile Devices in Public Spaces](#using-mobile-devices-in-public-spaces)
   - [Mobile Device Emergency Sanitisation Processes and Procedures](#mobile-device-emergency-sanitisation-processes-and-procedures)
   - [Before Travelling Overseas with Mobile Devices](#before-travelling-overseas-with-mobile-devices)
-    - [**Before travelling overseas with mobile devices, personnel take the following actions:**](#before-travelling-overseas-with-mobile-devices-personnel-take-the-following-actions)
+  - [**Before travelling overseas with mobile devices, personnel take the following actions:**](#before-travelling-overseas-with-mobile-devices-personnel-take-the-following-actions)
   - [While Travelling Overseas with Mobile Devices](#while-travelling-overseas-with-mobile-devices)
-    - [Personnel take the following precautions when travelling overseas with mobile devices:](#personnel-take-the-following-precautions-when-travelling-overseas-with-mobile-devices)
   - [After Travelling Overseas with Mobile Devices](#after-travelling-overseas-with-mobile-devices)
-    - [If returning from travelling overseas with mobile devices to high or extreme risk countries, personnel take the following additional actions:](#if-returning-from-travelling-overseas-with-mobile-devices-to-high-or-extreme-risk-countries-personnel-take-the-following-additional-actions)
 - [Evaluated Products](#evaluated-products)
   - [Evaluated Configuration](#evaluated-configuration)
   - [Use of High Assurance ICT Equipment in Unevaluated Configurations](#use-of-high-assurance-ict-equipment-in-unevaluated-configurations)
@@ -118,7 +116,6 @@ sources: https://www.cyber.gov.au/acsc/view-all-content/ismx         https://www
   - [PowerShell](#powershell)
   - [Host-based Intrusion Prevention System](#host-based-intrusion-prevention-system)
   - [Anti Virus](#anti-virus)
-    - [**Antivirus software is implemented on workstations and servers with:**](#antivirus-software-is-implemented-on-workstations-and-servers-with)
   - [Device Access Control Software](#device-access-control-software)
   - [Operating System Event Logging](#operating-system-event-logging)
   - [Hardening Application Configurations](#hardening-application-configurations)
@@ -186,7 +183,6 @@ sources: https://www.cyber.gov.au/acsc/view-all-content/ismx         https://www
   - [Protocol Selection](#protocol-selection)
   - [Security Association Lifetimes](#security-association-lifetimes)
   - [Perfect Forward Secrecy](#perfect-forward-secrecy)
-      - [source: https://www.techtarget.com/whatis/definition/perfect-forward-secrecy#:~:text=With%20perfect%20forward%20secrecy%2C%20every,would%20stay%20encrypted%20and%20secure.](#source-httpswwwtechtargetcomwhatisdefinitionperfect-forward-secrecytextwith20perfect20forward20secrecy2c20everywould20stay20encrypted20and20secure)
   - [Border Gateway Protocol Route Security](#border-gateway-protocol-route-security)
 - [Cross Domain Solutions](#cross-domain-solutions)
   - [Introduction to Cross Domain Solutions](#introduction-to-cross-domain-solutions)
@@ -213,20 +209,26 @@ sources: https://www.cyber.gov.au/acsc/view-all-content/ismx         https://www
 
 # Becoming a CISO
 
-## **Required Skills and Experience**
+## Required Skills and Experience
  
 The role of the Chief Information Security Officer (CISO) requires a combination of technical and soft skills, such as business acumen, leadership, communications and relationship building. Additionally, a CISO must adopt a continuous approach to learning and up-skilling in order to maintain pace with the cyber threat landscape and new technologies. It is expected that a CISO show innovation and imagination in conceiving and delivering cyber security strategies for their organisation.
 
-## **Providing Cyber Security Leadership and Guidance** 
+<br>
+
+## Providing Cyber Security Leadership and Guidance
 To provide cyber security leadership and guidance within an organisation, it is important that the organisation appoints a CISO.
 
-## **Overseeing The Cyber Security Program**
+<br>
+
+## Overseeing The Cyber Security Program
 The CISO is also responsible for overseeing their organisation’s response to cyber security incidents, including how internal teams respond and communicate with each other during an incident. In the event of a major cyber security incident, the CISO should be prepared to step into a crisis management role. They should understand how to bring clarity to the situation and communicate effectively with internal and external stakeholders.
 
-## **Coordinating Cyber Security**
+## Coordinating Cyber Security
 The CISO is responsible for ensuring the alignment of cyber security and business objectives within their organisation. To achieve this, they should facilitate communication between cyber security and business stakeholders. This includes translating cyber security concepts and language into business concepts and language, as well as ensuring that business teams consult with cyber security teams to determine appropriate controls when planning new business projects. Additionally, as the CISO is responsible for the development of their organisation’s cyber security program, they are best placed to advise projects on the strategic direction of cyber security within their organisation.
 
-## **Communication**
+<br>
+
+## Communication
 The CISO is responsible for reporting cyber security matters to their organisation’s senior executive or Board. Reporting should cover:
 - The organisation’s security risk profile
 - The status of key systems and any outstanding security risks
@@ -236,17 +238,25 @@ The CISO is responsible for reporting cyber security matters to their organisati
   
 Reporting on cyber security matters should be structured by business functions, regions or legal entities and support a consolidated view of an organisation’s security risks. It is important that the CISO is able to translate security risks into operational risks for their organisation, including financial and legal risks, in order to enable more holistic conversations about their organisation’s risks.
 
-## **Business Continuity and Disaster Recovery Planning**
+<br>
+
+## Business Continuity and Disaster Recovery Planning
 The CISO is responsible for contributing to the development and maintenance of their organisation’s business continuity and disaster recovery plans, with the aim to improve business resilience and ensure the continued operation of critical business processes.
 
-## **Working with Suppliers**
+<br>
+
+## Working with Suppliers
 
 The CISO is responsible for ensuring that consistent vendor management processes are applied across their organisation, from discovery through to ongoing management. As supplier relationships come with additional security risks, the CISO should assist personnel with assessing cyber supply chain risks and understand the security impacts of entering into contracts with suppliers.
 
-## **Budgeting**
+<br>
+
+## Budgeting
 Receiving and managing a dedicated cyber security budget will ensure the CISO has sufficient access to funding to support their cyber security program, including cyber security uplift activities and responding to cyber security incidents.
 
-## **Overseeing Cyber Security personnel**
+<br>
+
+## Overseeing Cyber Security Personnel
 The CISO is responsible for the cyber security workforce within their organisation, including plans to attract, train and retain cyber security personnel. The CISO should also delegate relevant tasks to cyber security managers and other personnel as required and provide them with adequate authority and resources to perform their duties.
 
 <br>
@@ -307,7 +317,7 @@ Establishing an incident management policy can increase the likelihood of succes
 
 ## Cyber Security Incident Register 
 Recording cyber security incidents in a register can assist with ensuring that appropriate remediation activities are undertaken. In addition, the types and frequency of cyber security incidents, along with the costs of any remediation activities, can be used as an input to future risk assessment activities.
-### Security incident registry is maintained by covering the following:
+## Security incident registry is maintained by covering the following:
 - The date the cyber security incident occurred
 - The date the cyber security incident was discovered
 - A description of the cyber security incident
@@ -361,9 +371,10 @@ A cyber security strategy sets out an organisation's guiding principles, objecti
 
 ## Maintenance of Security Documentation
 Threat environments are dynamic. If security documentation is not kept up-to-date to reflect the current threat environment, policies, processes and procedures may cease to be effective. In such a situation, resources could be devoted to cyber security initiatives or investments that have reduced effectiveness or are no longer relevant. 
-### *Security documentation is reviewed at least annually and includes a ‘current as at [date]’ or equivalent statement.*
 
-#
+*Security documentation is reviewed at least annually and includes a ‘current as at [date]’ or equivalent statement.*
+
+<br>
 
 ## Communication of Security Documentation 
 It is important that once security documentation has been approved, it is published and communicated to all stakeholders. If security documentation is not communicated to stakeholders, they will be unaware of what policies and procedures have been implemented for systems. 
@@ -383,6 +394,8 @@ Systems have a continuous monitoring plan that includes:
 The application of the defence-in-depth principle to the protection of systems is enhanced through the use of successive layers of physical security. The first layer of physical security being the use of a security zone for facilities containing systems.
 
 Systems are secured in facilities that meet the requirements for a security zone suitable for their sensitivity or classification.
+
+<br>
 
 ## Physical Access to Servers, Network Devices and Cryptographic Equipment
 The second layer of physical security is the use of an additional security zone for a server room or communications room. This is then further supplemented by the use of security containers or secure rooms for the protection of servers, network devices and cryptographic equipment.
@@ -428,7 +441,7 @@ To assist with incident response activities, it is important that privileged acc
 ## Recording Authorisation for Personnel to Access Systems 
 Retaining records of system account requests will assist in maintaining personnel accountability. This is needed to ensure there is a record of all personnel authorised to access a system, their user identification, who provided the authorisation, when the authorisation was granted and when the access was last reviewed.
 
-### **a secure record is maintained for the life of each system covering:**
+**a secure record is maintained for the life of each system covering:**
 - All personnel authorised to access the system, and their user identification 
 - Who provided authorisation for access 
 - When access was granted 
@@ -519,12 +532,12 @@ Transparent wall outlet box covers allow for inspection of cable cross-patching 
 
 ## Physical Separation of Cabinets and Patch Panels 
 Physical separation between TOP SECRET systems and systems of lower classifications reduces the chance of cross-patching, thereby the possibility of unauthorised personnel gaining access to TOP SECRET systems. 
-- There is a visible gap between TOP SECRET cabinets and cabinets of lower classifications. 
-- Where spatial constraints demand patch panels of lower classifications than TOP SECRET be located in the same cabinet as a TOP SECRET patch panel: 
+There is a visible gap between TOP SECRET cabinets and cabinets of lower classifications. 
+Where spatial constraints demand patch panels of lower classifications than TOP SECRET be located in the same cabinet as a TOP SECRET patch panel: 
   
-  - a physical barrier in the cabinet is provided to separate patch panels 
-  - only personnel holding a Positive Vetting security clearance have access to the cabinet
-  - approval from the TOP SECRET system’s authorising officer is obtained prior to installation. 
+- a physical barrier in the cabinet is provided to separate patch panels 
+- only personnel holding a Positive Vetting security clearance have access to the cabinet
+- approval from the TOP SECRET system’s authorising officer is obtained prior to installation. 
 
 ## Audio Secure Rooms 
 Audio secure rooms are designed to prevent audio conversations from being overheard. The Australian Security Intelligence Organisation should be consulted before any modifications are made to TOP SECRET audio secure rooms. 
@@ -608,7 +621,7 @@ issued with newly provisioned accounts, mobile devices and removable media from 
 
 - Advised to avoid taking any personal mobile devices, especially if rooted or jailbroken.
 
-### **Before travelling overseas with mobile devices, personnel take the following actions:**
+## **Before travelling overseas with mobile devices, personnel take the following actions:**
 
 - Record all details of the mobile devices being taken, such as product types, serial numbers and International Mobile Equipment Identity numbers
   
@@ -628,7 +641,7 @@ issued with newly provisioned accounts, mobile devices and removable media from 
 
 ## While Travelling Overseas with Mobile Devices
 
-### Personnel take the following precautions when travelling overseas with mobile devices: 
+*** Personnel take the following precautions when travelling overseas with mobile devices: ***
 - Never leaving mobile devices or removable media unattended for any period of time, including by placing them in checked-in luggage or leaving them in hotel safes
    
 - Never storing credentials with mobile devices that they grant access to, such as in laptop bags 
@@ -660,7 +673,8 @@ Following overseas travel with mobile devices, personnel should take appropriate
 
 - Report if significant doubt exists as to the integrity of any mobile devices or removable media. 
  
-### If returning from travelling overseas with mobile devices to high or extreme risk countries, personnel take the following additional actions:
+If returning from travelling overseas with mobile devices to high or extreme risk countries, personnel take the following additional actions:
+
 - Reset user credentials used with mobile devices, including those used for remote access to their organisation’s systems
 
 - Monitor accounts for any indicators of compromise, such as failed logon attempts. 
@@ -781,7 +795,7 @@ logging and transcription functionality available in PowerShell can provide inva
 Many security products rely on <mark style="background-color: lightgreen">signatures to detect malicious code.</mark> This approach is only effective when malicious code has already been profiled and signatures are available from security vendors. Unfortunately, <mark style="background-color: ">an adversary can easily create variants of known malicious code in order to bypass traditional signature-based detection. </mark> A Host-based Intrusion Prevention System (HIPS) can use behaviour-based detection to assist in identifying and blocking anomalous behaviour as well as detecting malicious code that has yet to be identified by security vendors. As such, it is important that a HIPS is implemented on workstations, critical servers and high-value servers.
 
 ## Anti Virus
-### **Antivirus software is implemented on workstations and servers with:**
+**Antivirus software is implemented on workstations and servers with:**
 - Signature-based detection functionality enabled and set to a high level 
   
 - Heuristic-based detection functionality enabled and set to a high level 
@@ -1170,7 +1184,7 @@ Perfect Forward Secrecy (PFS), also known as Forward Secrecy, is an encryption s
 
 Using PFS reduces the impact of the compromise of a security association.
 
-#### source: https://www.techtarget.com/whatis/definition/perfect-forward-secrecy#:~:text=With%20perfect%20forward%20secrecy%2C%20every,would%20stay%20encrypted%20and%20secure.
+[source](https://www.techtarget.com/whatis/definition/perfect-forward-secrecy#:~:text=With%20perfect%20forward%20secrecy%2C%20every,would%20stay%20encrypted%20and%20secure.)
 
 ## Border Gateway Protocol Route Security 
 Resource Public Key Infrastructure (RPKI) uses public key cryptography to authenticate routing data on the internet. This allows an organisation to verify routing data they receive, transmit and process to determine routing calculations for internet traffic.
